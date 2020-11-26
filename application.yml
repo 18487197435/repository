@@ -1,0 +1,23 @@
+server:
+  port: 20059
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.1.7:3306/address_crawl?useUnicode=true&amp&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  main:
+    banner-mode: 'console'
+
+logging:
+  file.path: logs
+  level:
+    root: info
+    com.cn.fanguangfu: debug
+
+management:
+  endpoints:
+    web:
+      base-path: '/jkong'
+    beans:
+      enabled: true
